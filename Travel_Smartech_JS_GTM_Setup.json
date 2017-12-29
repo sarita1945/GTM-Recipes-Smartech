@@ -1,0 +1,481 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2017-12-29 08:34:06",
+    "containerVersion": {
+        "path": "accounts/2221311333/containers/8130279/versions/0",
+        "accountId": "2221311333",
+        "containerId": "8130279",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/2221311333/containers/8130279",
+            "accountId": "2221311333",
+            "containerId": "8130279",
+            "name": "Smartech_Travel Industry",
+            "publicId": "GTM-TV4HZJL",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1514529946265",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/2221311333/containers/8130279/workspaces?apiLink=container"
+        },
+        "tag": [
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "tagId": "1",
+                "name": "Smartech_Base_JS",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script src='//tw.netcore.co.in/smartechclient.js'></script>\n\n<script>\n\tsmartech('create', '');\n\tsmartech('register', '');\n\tsmartech('identify', {{Smartech_EmailID-Reg}} || {{Smartech_EmailID-Login}});\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1514536255620",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "tagId": "6",
+                "name": "Smartech_CheckOut_Tag",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  smartech('dispatch', <>, {\n    \"s^selected_seats\": {{Smartech_SelectedSeats}},\n    \"f^total_amount\": {{Smartech_TotalAmount}},\n    \"i^number_of_seats\": {{Smartech_NumberOfSeats}}\n});\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "true"
+                    }
+                ],
+                "fingerprint": "1514536283918",
+                "firingTriggerId": [
+                    "9"
+                ],
+                "setupTag": [
+                    {
+                        "tagName": "Smartech_Base_JS"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "tagId": "2",
+                "name": "Smartech_Login_User_Tag",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  smartech('contact', '<>', {\n    'pk^email': {{Smartech_EmailID-Login}}\n})\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "true"
+                    }
+                ],
+                "fingerprint": "1514536316955",
+                "firingTriggerId": [
+                    "5"
+                ],
+                "setupTag": [
+                    {
+                        "tagName": "Smartech_Base_JS"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "tagId": "3",
+                "name": "Smartech_Register_User_Tag",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  smartech('contact', '<>', {\n    'pk^email': {{Smartech_EmailID-Reg}},\n    'mobile': {{Smartech_UserMobile}},\n    'NAME': {{Smartech_UserFirstName}},\n    'LAST_NAME': {{Smartech_UserLastName}}\n})\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "true"
+                    }
+                ],
+                "fingerprint": "1514536340310",
+                "firingTriggerId": [
+                    "6"
+                ],
+                "setupTag": [
+                    {
+                        "tagName": "Smartech_Base_JS"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "tagId": "4",
+                "name": "Smartech_Search_Bus_Tag",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  smartech('dispatch', <>, {\n    \"s^source_city\": {{Smartech_SourceCity}},\n    \"s^destination_city\": {{Smartech_DestCity}},\n    \"d^journey_date\": {{Smartech_JourneyDate}},\n    \"d^return_journey_date\": {{Smartech_ReturnJourneyDate}}\n});\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "true"
+                    }
+                ],
+                "fingerprint": "1514536360393",
+                "firingTriggerId": [
+                    "8"
+                ],
+                "setupTag": [
+                    {
+                        "tagName": "Smartech_Base_JS"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "tagId": "5",
+                "name": "Smartech_SeatsSelection_Tag",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  smartech('dispatch', <>, {\n    \"s^selected_seats\": {{Smartech_SelectedSeats}},\n    \"f^total_amount\": {{Smartech_TotalAmount}},\n    \"i^number_of_seats\": {{Smartech_NumberOfSeats}}\n});\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "true"
+                    }
+                ],
+                "fingerprint": "1514536388967",
+                "firingTriggerId": [
+                    "7"
+                ],
+                "setupTag": [
+                    {
+                        "tagName": "Smartech_Base_JS"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "triggerId": "9",
+                "name": "Smartech_CheckOut_Trigger",
+                "type": "CLICK",
+                "fingerprint": "1514529946265"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "triggerId": "6",
+                "name": "Smartech_Register_User_Trigger",
+                "type": "CLICK",
+                "fingerprint": "1514529808106"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "triggerId": "8",
+                "name": "Smartech_Search_Bus_Trigger",
+                "type": "CLICK",
+                "fingerprint": "1514529898952"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "triggerId": "7",
+                "name": "Smartech_SeatsSelection_Trigger",
+                "type": "CLICK",
+                "fingerprint": "1514529864808"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "triggerId": "5",
+                "name": "Smartech_UserLogin_Trigger",
+                "type": "CLICK",
+                "fingerprint": "1514529754963"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "variableId": "8",
+                "name": "Smartech_DestCity",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514529108181"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "variableId": "11",
+                "name": "Smartech_NumberOfSeats",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514529095639"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "variableId": "12",
+                "name": "Smartech_ReturnJourneyDate",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514529080698"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "variableId": "10",
+                "name": "Smartech_SelectedSeats",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514529065884"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "variableId": "9",
+                "name": "Smartech_SourceCity",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514529046256"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "variableId": "13",
+                "name": "Smartech_StartJourneyDate",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514529030846"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "variableId": "14",
+                "name": "Smartech_TotalAmount",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514529017564"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "variableId": "6",
+                "name": "Smartech_UserAge",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514529002165"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "variableId": "5",
+                "name": "Smartech_UserEmail",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514528978301"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "variableId": "3",
+                "name": "Smartech_UserFirstName",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514528961719"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "variableId": "7",
+                "name": "Smartech_UserGender",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514528940022"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "variableId": "2",
+                "name": "Smartech_UserLastName",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514528925353"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "variableId": "1",
+                "name": "Smartech_UserMobile",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514528910675"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "variableId": "4",
+                "name": "Smartech_UserName",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514528895753"
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "2221311333",
+                "containerId": "8130279",
+                "type": "EVENT",
+                "name": "Event"
+            }
+        ],
+        "fingerprint": "0",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/2221311333/containers/8130279/versions/0?apiLink=version"
+    }
+}

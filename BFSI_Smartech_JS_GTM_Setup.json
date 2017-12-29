@@ -1,0 +1,239 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2017-12-29 08:37:44",
+    "containerVersion": {
+        "path": "accounts/2220396756/containers/8129475/versions/0",
+        "accountId": "2220396756",
+        "containerId": "8129475",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/2220396756/containers/8129475",
+            "accountId": "2220396756",
+            "containerId": "8129475",
+            "name": "BFSI Smartech",
+            "publicId": "GTM-MZ79VN9",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1514530627495",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/2220396756/containers/8129475/workspaces?apiLink=container"
+        },
+        "tag": [
+            {
+                "accountId": "2220396756",
+                "containerId": "8129475",
+                "tagId": "1",
+                "name": "Smartech_Base_JS",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script src='//tw.netcore.co.in/smartechclient.js'></script>\n\n<script>\n  smartech('create', ' ');\n  smartech('register', ' ');\n  smartech('identify', {{Smartech_UserEmail}};\n</script> "
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "true"
+                    }
+                ],
+                "fingerprint": "1513847585520",
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "2220396756",
+                "containerId": "8129475",
+                "tagId": "4",
+                "name": "Smartech_Subscribe Newsletter_Tag",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  smartech('contact', '', {\n    'pk^email': {{Smartech_UserEmail}},\n    'mobile': {{Smartech_UserMobile}},\n    'NAME': {{Smartech_UserName}}\n    })\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "true"
+                    }
+                ],
+                "fingerprint": "1514536611452",
+                "firingTriggerId": [
+                    "5"
+                ],
+                "setupTag": [
+                    {
+                        "tagName": "Smartech_Base_JS"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "2220396756",
+                "containerId": "8129475",
+                "tagId": "2",
+                "name": "Smartech_UserLogin_Tag",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  smartech('contact', '', {\n    'pk^email': {{Smartech_UserEmail}}\n    })\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "true"
+                    }
+                ],
+                "fingerprint": "1514536629655",
+                "firingTriggerId": [
+                    "6"
+                ],
+                "setupTag": [
+                    {
+                        "tagName": "Smartech_Base_JS"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "2220396756",
+                "containerId": "8129475",
+                "tagId": "3",
+                "name": "Smartech_UserReg_Tag",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  smartech('contact', '', {\n    'pk^email': {{Smartech_UserEmail}},\n    'mobile': {{Smartech_UserMobile}},\n    'NAME': {{Smartech_UserName}}\n    })\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "true"
+                    }
+                ],
+                "fingerprint": "1514536649742",
+                "firingTriggerId": [
+                    "7"
+                ],
+                "setupTag": [
+                    {
+                        "tagName": "Smartech_Base_JS"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "2220396756",
+                "containerId": "8129475",
+                "triggerId": "5",
+                "name": "Smartech_Subscribe Newsletter_Trigger",
+                "type": "CLICK",
+                "fingerprint": "1514530195288"
+            },
+            {
+                "accountId": "2220396756",
+                "containerId": "8129475",
+                "triggerId": "6",
+                "name": "Smartech_UserLogin_Trigger",
+                "type": "CLICK",
+                "fingerprint": "1514530365908"
+            },
+            {
+                "accountId": "2220396756",
+                "containerId": "8129475",
+                "triggerId": "7",
+                "name": "Smartech_UserReg_Trigger",
+                "type": "CLICK",
+                "fingerprint": "1514530627495"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "2220396756",
+                "containerId": "8129475",
+                "variableId": "1",
+                "name": "Smartech_UserEmail",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1513851215660"
+            },
+            {
+                "accountId": "2220396756",
+                "containerId": "8129475",
+                "variableId": "2",
+                "name": "Smartech_UserMobile",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}\n\n"
+                    }
+                ],
+                "fingerprint": "1513851651399"
+            },
+            {
+                "accountId": "2220396756",
+                "containerId": "8129475",
+                "variableId": "3",
+                "name": "Smartech_UserName",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}\n\n"
+                    }
+                ],
+                "fingerprint": "1513851727921"
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "2220396756",
+                "containerId": "8129475",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "2220396756",
+                "containerId": "8129475",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "2220396756",
+                "containerId": "8129475",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "2220396756",
+                "containerId": "8129475",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "2220396756",
+                "containerId": "8129475",
+                "type": "EVENT",
+                "name": "Event"
+            }
+        ],
+        "fingerprint": "0",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/2220396756/containers/8129475/versions/0?apiLink=version"
+    }
+}

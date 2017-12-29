@@ -1,0 +1,528 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2017-12-25 17:17:49",
+    "containerVersion": {
+        "path": "accounts/2235624250/containers/8143628/versions/0",
+        "accountId": "2235624250",
+        "containerId": "8143628",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/2235624250/containers/8143628",
+            "accountId": "2235624250",
+            "containerId": "8143628",
+            "name": "google.com",
+            "publicId": "GTM-T92KD5H",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1514205672814",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/2235624250/containers/8143628/workspaces?apiLink=container"
+        },
+        "tag": [
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "tagId": "1",
+                "name": "Smartech_AddToCart_Tag",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  smartech('dispatch', <>, {\n           \"i^prid\": {{Smartech_ProductId}},\n           \"s^prName\": {{Smartech_ProductName}},\n           \"f^prPrice\": {{Smartech_ProductPrice}},\n           \"s^prCatogery\": {{Smartech_ProductCategory}},\n           \"s^prBrand\": {{Smartech_ProductBrand}},\n           \"s^prColor\": {{Smartech_ProductColor}},\n           \"s^prCurrency\": {{Smartech_ProductCurrency}},\n           \"s^prImage\": {{Smartech_ProductImage}},\n           \"i^prqt\": {{Smartech_ProductQuantity}},\n           \"s^prSize\": {{Smartech_ProductSize}},\n           \"s^prVariant\": {{Smartech_ProductVariant}}\n           });\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "true"
+                    }
+                ],
+                "fingerprint": "1514222105797",
+                "firingTriggerId": [
+                    "8"
+                ],
+                "setupTag": [
+                    {
+                        "tagName": "Smartech_Base_JS_Tag"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "tagId": "2",
+                "name": "Smartech_Base_JS_Tag",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script src='//tw.netcore.co.in/smartechclient.js'></script>\n\n<script>\n  smartech('create', '');\n  smartech('register', '');\n  smartech('identify', {{Smartech_UserEmail}};\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "true"
+                    }
+                ],
+                "fingerprint": "1514205769919",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "tagId": "3",
+                "name": "Smartech_Checkout_Tag",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  smartech('dispatch', <>, {\n           \"i^prid\": {{Smartech_ProductId}},\n           \"s^prName\": {{Smartech_ProductName}},\n           \"f^prPrice\": {{Smartech_ProductPrice}},\n           \"s^prCatogery\": {{Smartech_ProductCategory}},\n           \"s^prBrand\": {{Smartech_ProductBrand}},\n           \"s^prColor\": {{Smartech_ProductColor}},\n           \"s^prCurrency\": {{Smartech_ProductCurrency}},\n           \"s^prImage\": {{Smartech_ProductImage}},\n           \"i^prqt\": {{Smartech_ProductQuantity}},\n           \"s^prSize\": {{Smartech_ProductSize}},\n           \"s^prVariant\": {{Smartech_ProductVariant}}\n           });\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "true"
+                    }
+                ],
+                "fingerprint": "1514222131308",
+                "firingTriggerId": [
+                    "10"
+                ],
+                "setupTag": [
+                    {
+                        "tagName": "Smartech_Base_JS_Tag"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "tagId": "4",
+                "name": "Smartech_ProductPageView_Tag",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  smartech('dispatch', <>, {\n           \"i^prid\": {{Smartech_ProductId}},\n           \"s^prName\": {{Smartech_ProductName}},\n           \"f^prPrice\": {{Smartech_ProductPrice}},\n           \"s^prCatogery\": {{Smartech_ProductCategory}},\n           \"s^prBrand\": {{Smartech_ProductBrand}},\n           \"s^prColor\": {{Smartech_ProductColor}},\n           \"s^prCurrency\": {{Smartech_ProductCurrency}},\n           \"s^prImage\": {{Smartech_ProductImage}},\n           \"i^prqt\": {{Smartech_ProductQuantity}},\n           \"s^prSize\": {{Smartech_ProductSize}},\n           \"s^prVariant\": {{Smartech_ProductVariant}}\n           });\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "true"
+                    }
+                ],
+                "fingerprint": "1514222078517",
+                "firingTriggerId": [
+                    "7"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "tagId": "5",
+                "name": "Smartech_RemoveFromCart_Tag",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  smartech('dispatch', <>, {\n           \"i^prid\": {{Smartech_ProductId}},\n           \"s^prName\": {{Smartech_ProductName}},\n           \"f^prPrice\": {{Smartech_ProductPrice}},\n           \"s^prCatogery\": {{Smartech_ProductCategory}},\n           \"s^prBrand\": {{Smartech_ProductBrand}},\n           \"s^prColor\": {{Smartech_ProductColor}},\n           \"s^prCurrency\": {{Smartech_ProductCurrency}},\n           \"s^prImage\": {{Smartech_ProductImage}},\n           \"i^prqt\": {{Smartech_ProductQuantity}},\n           \"s^prSize\": {{Smartech_ProductSize}},\n           \"s^prVariant\": {{Smartech_ProductVariant}}\n           });\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "true"
+                    }
+                ],
+                "fingerprint": "1514222150021",
+                "firingTriggerId": [
+                    "9"
+                ],
+                "setupTag": [
+                    {
+                        "tagName": "Smartech_Base_JS_Tag"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "tagId": "6",
+                "name": "Smartech_UserLogin_Tag",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  smartech('contact', '', {\n    'pk^email': {{Smartech_UserEmail}}\n    })\n</script>\n  \n  \n "
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "true"
+                    }
+                ],
+                "fingerprint": "1514221553472",
+                "firingTriggerId": [
+                    "6"
+                ],
+                "setupTag": [
+                    {
+                        "tagName": "Smartech_Base_JS_Tag"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "tagId": "7",
+                "name": "Smartech_UserRegistration_Tag",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  smartech('contact', '', {\n    'pk^email': {{Smartech_UserEmail}},\n    'mobile': {{Smartech_UserMobile}},\n    'NAME': {{Smartech_UserName}},\n    'GENDER': {{Smartech_UserGender}}\n    })\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "true"
+                    }
+                ],
+                "fingerprint": "1514221579976",
+                "firingTriggerId": [
+                    "5"
+                ],
+                "setupTag": [
+                    {
+                        "tagName": "Smartech_Base_JS_Tag"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "triggerId": "8",
+                "name": "Smartech_AddToCart_Trigger",
+                "type": "CLICK",
+                "fingerprint": "1514205629673"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "triggerId": "10",
+                "name": "Smartech_Checkout_Trigger",
+                "type": "CLICK",
+                "fingerprint": "1514205672814"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "triggerId": "7",
+                "name": "Smartech_ProductPageView_Trigger",
+                "type": "PAGEVIEW",
+                "fingerprint": "1514205609324"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "triggerId": "9",
+                "name": "Smartech_RemoveFromCart_Trigger",
+                "type": "CLICK",
+                "fingerprint": "1514205652315"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "triggerId": "6",
+                "name": "Smartech_UserLogin_Trigger",
+                "type": "CLICK",
+                "fingerprint": "1514205580495"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "triggerId": "5",
+                "name": "Smartech_UserRegistration_Trigger",
+                "type": "CLICK",
+                "fingerprint": "1514205564657"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "variableId": "1",
+                "name": "Smartech_ProductBrand",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514204740129"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "variableId": "2",
+                "name": "Smartech_ProductCategory",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514204740129"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "variableId": "3",
+                "name": "Smartech_ProductColor",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514204740129"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "variableId": "4",
+                "name": "Smartech_ProductCurrency",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514204740130"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "variableId": "5",
+                "name": "Smartech_ProductId",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514204740130"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "variableId": "6",
+                "name": "Smartech_ProductImage",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514204740130"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "variableId": "7",
+                "name": "Smartech_ProductName",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514204740130"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "variableId": "8",
+                "name": "Smartech_ProductPrice",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514204740130"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "variableId": "9",
+                "name": "Smartech_ProductQuantity",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514204740131"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "variableId": "10",
+                "name": "Smartech_ProductSize",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514204740131"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "variableId": "11",
+                "name": "Smartech_ProductVariant",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514204740131"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "variableId": "12",
+                "name": "Smartech_UserEmail",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514204740131"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "variableId": "15",
+                "name": "Smartech_UserGender",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514205287841"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "variableId": "13",
+                "name": "Smartech_UserMobile",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514204740131"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "variableId": "14",
+                "name": "Smartech_UserName",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\tvar inputField = document.getElementById(\"<WEB ELEMENT ID>\");\n\treturn inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1514204740132"
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "2235624250",
+                "containerId": "8143628",
+                "type": "EVENT",
+                "name": "Event"
+            }
+        ],
+        "fingerprint": "0",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/2235624250/containers/8143628/versions/0?apiLink=version"
+    }
+}
