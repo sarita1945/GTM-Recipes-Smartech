@@ -1,2 +1,4 @@
 # GTM-Recipes-Smartech
-GTM-Recipes-Smartech
+
+
+Refer the attached doc
